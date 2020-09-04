@@ -22,7 +22,6 @@ h2{
     text-shadow: -4px 3px 0 red, -14px 7px 0 #0a0e27;
     
 }
-
 div.ancho-img{
     width: 100%;
     position: fixed;
@@ -34,14 +33,6 @@ div.ancho-img{
 div#catalogo-main{
     width: 100%;
 }
-
-img.turismo{
-    width: 100%;
-    display: block;
-    margin: auto;
-    top: 0;
-    left: 0;
-}
 /* Mobile */
 @media only screen and (max-width:767px){
     div.content-img{
@@ -50,11 +41,14 @@ img.turismo{
         /*background-color: darkgray;*/
        
     }
+    
     img.catalogo{
         width: 95%;
         display: block;
         margin: 0 auto 0 auto;
+        margin-bottom: 1.3em;
     }
+    
  }
 
 /* Table ,Ipa */
@@ -75,7 +69,6 @@ img.catalogo{
     display: block;
     margin: 0 auto 0 auto;
 }
-
  }
  /* pc-portatil */
 @media only screen and (min-width: 1024px){
