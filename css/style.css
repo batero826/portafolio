@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+    z-index: +2;
+    color: floralwhite;
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font: italic bold 100px Georgia, Serif;
+    text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
+}
+
+h2{
+    /* text-align: center; */
+    z-index: +2;
+    /* color: floralwhite; */
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font: italic bold 60px Georgia, Serif;
+    text-shadow: -4px 3px 0 red, -14px 7px 0 #0a0e27;
+    
+}
+div.ancho-img{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+div#catalogo-main{
+    width: 100%;
+}
+/* Mobile */
+@media only screen and (max-width:767px){
+    div.content-img{
+        width: 90%;
+        margin: 0 auto 0 auto;
+        background-color: darkgray;
+       
+    }
+    
+    img.catalogo{
+        width: 95%;
+        display: block;
+        margin: 0 auto 0 auto;
+        margin-bottom: 1.3em;
+    }
+    
+ }
+
+/* Table ,Ipa */
+@media only screen and (min-width: 768px)
+ and(max-width:1023px){
+     /* contenedor  */
+        div.content-img{
+    width: 32%;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 1.3em;
+    background-color: darkgray;
+    
+}
+
+img.catalogo{
+    width: 95%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+ }
+ /* pc-portatil */
+@media only screen and (min-width: 1024px){
+    /* contenedor  */
+ div.content-img{
+   width: 23%;
+   float: left;
+  margin-left: 1.6%;
+   margin-bottom: 1.3em;
+   background-color: darkgray;
+  
+}
+
+img.catalogo{
+   width: 95%;
+   display: block;
+   margin: 0 auto 0 auto;
+}
+}
+
+
