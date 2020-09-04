@@ -6,7 +6,7 @@ h1{
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    font: italic bold 100px Georgia, Serif;
+    font: italic bold 50px Georgia, Serif;
     text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
 }
 
@@ -18,7 +18,7 @@ h2{
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    font: italic bold 60px Georgia, Serif;
+    font: italic bold 50px Georgia, Serif;
     text-shadow: -4px 3px 0 red, -14px 7px 0 #0a0e27;
     
 }
@@ -38,7 +38,7 @@ div#catalogo-main{
     div.content-img{
         width: 90%;
         margin: 0 auto 0 auto;
-        background-color: darkgray;
+        /*background-color: darkgray;*/
        
     }
     
@@ -60,7 +60,7 @@ div#catalogo-main{
     float: left;
     margin-left: 1%;
     margin-bottom: 1.3em;
-    background-color: darkgray;
+   /* background-color: darkgray;*/
     
 }
 
@@ -78,7 +78,7 @@ img.catalogo{
    float: left;
   margin-left: 1.6%;
    margin-bottom: 1.3em;
-   background-color: darkgray;
+   /*background-color: darkgray;*/
   
 }
 
