@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.tabla{
+display: block;
+margin: 0 auto;
+width: 400px;
+height: 400px;
+border: 1px solid black;
+}
+
+/* retos 2 */
+div#tabla1{
+    border: 0 solid ;
+     top:0 auto;
+     width: 200px;
+     height: 200px;
+     background-color: blue;
+}
+
+div#tabla2{
+    border: 0 solid;
+    top: 0 auto;
+    width: 200px;
+    height: 200px;
+     background-color: aquamarine;  
+}
+
+/* reto3 */
+div#cuadro1{
+    border: 0 solid ;
+    float: left;
+     top:0 auto;
+     width: 200px;
+     height: 200px;
+     background-color:red;
+}
+
+div#cuadro2{
+    border: 0 solid;
+    float: right;
+    top: 0 auto;
+    width: 200px;
+    height: 200px;
+     background-color: aquamarine;  
+}
+
+div#cuadro3{
+border: 0 solid;
+top: 0 auto;
+float: left;
+width: 200px;
+height: 200px;
+background-color: chartreuse;
+}
+
+div#cuadro4{
+    border: 0 solid;
+    float: right;
+    top:0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
