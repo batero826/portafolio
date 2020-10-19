@@ -1,6 +1,6 @@
 body{
     background:#252528;
-    color: rgb(255, 255, 255,.7);/* cambiales el tipo de color a la letra */
+    color: rgb(255, 255, 255,.4);/* cambiales el tipo de color a la letra */
    /*  color:rgb(255, 255, 255,.4);/* texto del cuerpo */ 
     font-family:'Roboto Condensed', sans-serif;/* esta es letra sacadas de google */
     padding: 0 1em;
@@ -14,15 +14,17 @@ h1{
 }
 
 nav{
-  background:rgb(245, 96,151,47);/* aqui es para cambiar el color  a menu */
+  background:rgba(0,0,0,.8);/* aqui es para cambiar el color  a menu */
   /* evitar que la caja se expanda */
   box-sizing:border-box ;/* tenemos una cajas */
   position: absolute;
   left:-18em ; 
   padding-top: 3em;
   top: 0;
+  transition: all .3s;
   height: 100%;
-  z-index: 5  ;
+  /* El menu debe quedar por debajo del toggle(icono hamburguesa*/
+  z-index: 5;
 }
 
 .menu{
@@ -39,49 +41,38 @@ nav{
   text-transform: uppercase;
   display: block;
   width: 100%;
+  /* transition: all .5s; */
 }
 
- 
+.menu li{
+  box-shadow: 3px 0 rgba(255,255,255, .2) inset;/* sobra y aparece una linea a lado  */
+  padding-left: 1.5em;
+  margin-right: 10px;
+  transition: all .5s;
+}
+.menu li:hover{
+  box-shadow: 17em 0 rgb(255, 255, 255, .2) inset; /* siempre debemos poner menor que  en el menu */
+}
+
+.menu a:hover{
+   margin-left: 1em;
+}
+
+.menu li a span{
+  margin-left: 9px;
+} 
 
 li.items{
   color: whitesmoke;
 }
 
-.menu li a span{
-  margin-left: 9px;
-  
-}
-a{
-    text-decoration: none;
-    color:whitesmoke;/* aqui es para cambiar el color de la letras de inicio, empresa  etc */
-    font-size: 20px;/* cambiar el tamaño de la letra en el menu "inicio,quiene somos " */
-}
-li{
-    list-style: none;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-span{
-    margin-left: 15px;
-    color: whitesmoke;
-
-}
-.fas-bars{
-  color: whitesmoke;
-}
-.fas{
-  color:whitesmoke;
-}
-.fab{
-  color:whitesmoke;
+.fa-bars{
+  color: white;
 }
 
 nav.mostrar{
   left: 0;  
 }
-
-
   #mostrar-nav > label{
   cursor: pointer;
   position: absolute;
@@ -89,5 +80,5 @@ nav.mostrar{
   left: 2em;
   z-index:10 ;
   font-size: 1.3em;
-  color:black;
+  
 } 
