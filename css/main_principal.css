@@ -76,7 +76,7 @@ header nav ul li .children_hijo{
         header nav{
             width: 80%;
             position: fixed;/* fixed se acomoda en cualquier partes  */
-            right:60% ;/* para poder  esconder */
+            right:50% ;/* para poder  esconder */
             height: calc(100% - 80px);/*propiedad donde ponemos  calcular="calc  */
             background: whitesmoke;
         }
