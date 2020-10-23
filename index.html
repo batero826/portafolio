@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu con subitems</title>
-     <link rel="stylesheet" href="css/menu.css">
+    <title>Menu Responsive</title>
+    <link rel="stylesheet" href="css/main_principal.css">
+    <link rel="stylesheet" href="fonts-fuente/style.css">
 </head>
 <body>
-     <h1>Menu con subitems no resp</h1>
-    <nav>
-        <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menu</a>
-                     <ul>
-                        <li><a href="menu_responsive.html" target="black">Menu Responsive</a></li>
-                        <li><a href="menu_iconos.html" target="black">Menu Iconos</a></li>
-                        <li><a href="#">Item3</a>
-                            <ul>
-                                <li><a href="#">Sub-SubItem1</a></li>
-                                <li><a href="#">Sub-SubItem2</a></li>
-                                <li><a href="#">Sub-SubItem3</a></li>
-                            </ul>
-                        </li>
-                            <li><a href="menu_responsive2.html" target="black">Menu Responsive lateral</a></li>
-                    </ul>
-                </li>
-                <li><a href="catalogo.html" target="blank">catalogos</a></li>
-                <li><a href="retos.html" target="black">Retos</a></li>
-                <li><a href="#">Item5</a></li>
-        </ul>
-    </nav>
-
-
-
-    
+    <header>
+        <nav>
+            <div class="titulo">
+                <h1>Mi Aprendizaje</h1>
+            </div>
+            <ul>
+                <ul>
+                    <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+                    <li><a href="#"><span class="icon-text-document"></span>Formularios</a></li>
+                    <li><a href="#"><span class="icon-layers"></span>Menús</a>
+                        <ul class="children_hijo">
+                            <li><a href="menu_subitems.html"target="black"><span class="icon-address"></span>Subitems no Resp</a></li>
+                            <li><a href="menu_responsive.html"target="black"><span class="icon-thunder-cloud"></span>Responsive 1</a></li>
+                            <li><a href="menu_iconos.html"target="black"><span class="icon-qq"></span> Responsive 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="icon-camera"></span>Imagenes</a></li>
+                    <li><a href="#"><span class="icon-phone"></span>Contactos</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a similique eos consectetur soluta deleniti, modi, deserunt placeat delectus est, velit cum dolorum. Officiis rerum fuga alias dolor dolores excepturi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a similique eos consectetur soluta deleniti, modi, deserunt placeat delectus est, velit cum dolorum. Officiis rerum fuga alias dolor dolores excepturi</p>
+    </div>
 </body>
 </html>
