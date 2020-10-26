@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: left;
+    display: block;
+    color: white;
+}
+.titulo{
+    position: absolute;/* darle un posicion  */
+    top:13px; /* para correr hacia abajo */
+    left: 20px;/* para correlo asia a un lado  derecho*/
+    
+}
+
+body{
+    background:#fefefe ;
+}
+
+header{
+    width: 100%;
+}
+
+header nav{
+    /* background: rgb(222,1,8); */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+header nav ul li{/* posicionamiento  este es el padre de los submenu */
+ display:inline-block;/* para alinear el menu vertical o horizontal "un lado del otro" */
+ position: relative;
+}
+header nav ul li:hover{
+    background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+   /*  background: rgb(191,0,6); *//* para que alumbre donde selecionamos */
+}
+
+header nav ul  li a{
+    color: white;
+    display: block;/* se comporta como un bloque para que escoja toda la palabra */
+    text-decoration: none;/*  */
+    padding: 20px;/* a= para separar entre ellos, los hijos   */
+
+}
+
+header nav ul li:hover .children_hijo{/* posicionamiento  absolute es para lo hijo  */
+    display: block;
+    width: 180%;
+    text-align: left;
+    z-index: 20;
+}
+header nav ul li .children_hijo{
+    display:none ;/* para ocultar lo hijo y se oculta el subitem */
+    background: #011826;
+    position: absolute;
+}
+
+.main-content{
+    margin: 2em;/* espacio */
+    text-align: justify;/* justificar el documento osea que se centra  */
+}
+/* movil y table -menu */
+@media screen  and (max-width: 768px){
+        header nav{
+            width: 80%;
+            position: fixed;/* fixed se acomoda en cualquier partes  */
+            right:50% ;/* para poder  esconder */
+            height: calc(100% - 80px);/*propiedad donde ponemos  calcular="calc  */
+            background: whitesmoke;
+        }
+        header nav ul li{
+            display: block;
+        }
+        header nav ul li a{
+            display: block;
+            color: rgb(222,1,8);/* letras del menu */
+        }
+
+}

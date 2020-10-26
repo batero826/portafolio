@@ -12,7 +12,9 @@ h1{
     position: absolute;/* darle un posicion  */
     top:13px; /* para correr hacia abajo */
     left: 20px;/* para correlo asia a un lado  derecho*/
-    
+}
+.menu_bar{
+    display: none;/* no va amostra o ocultar  */
 }
 
 body{
@@ -25,8 +27,8 @@ header{
 
 header nav{
     /* background: rgb(222,1,8); */
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);    
     width: 100%;
     margin: 0 auto;
     z-index: 10;
@@ -41,9 +43,15 @@ header nav ul li{/* posicionamiento  este es el padre de los submenu */
  display:inline-block;/* para alinear el menu vertical o horizontal "un lado del otro" */
  position: relative;
 }
+
+header nav ul li a span{
+    margin-right: 10px; /* para corres un margn espacio de la imagen al testo */
+}
+
 header nav ul li:hover{
-    background-color: #FFE53B;
-background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    
    /*  background: rgb(191,0,6); *//* para que alumbre donde selecionamos */
 }
 
@@ -72,20 +80,73 @@ header nav ul li .children_hijo{
     text-align: justify;/* justificar el documento osea que se centra  */
 }
 /* movil y table -menu */
-@media screen  and (max-width: 768px){
+@media screen  and (max-width: 768px){/* meria cueri */
+        body{
+            padding-top: 69px;/* solamente parte de arriba se sube */
+        }
+        .titulo{
+            display: none;/* para desaperecer el titulo */
+        }
+        .menu_bar{
+            display:block;/*  para mostrar */
+            width: 100%;/* mostrar el ancho  */
+            position: fixed;/* parte superior  */
+            top: 0;
+            background-color: #FFE53B;
+            background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+            
+       }
+       .menu_bar .bt-menu{
+        display: block;
+        padding:20px ;/* espaciado o dar un espacio  portodo lo lado  o un  solo lado  */
+        color: #fff;
+     font-size: 25px;/* fuente */
+     font-weight: 900;/* fuente de negrilla */
+     text-decoration: none; /* quitar  testo descorecho*/
+    }
+    .menu_bar span{
+        float: right;/* esto es para flotar */
+        font-size: 38px;/* aumentar el tamaño */
+    }
         header nav{
             width: 80%;
-            position: fixed;/* fixed se acomoda en cualquier partes  */
-            right:50% ;/* para poder  esconder */
+            position: fixed;/* posicion fija -fixed se acomoda en cualquier partes  */
+           /*  right:70% ; *//* para poder  esconder */
             height: calc(100% - 80px);/*propiedad donde ponemos  calcular="calc  */
-            background: whitesmoke;
+            background: rgb(230,230,230);
+            margin: 0;/* margenes */
+            overflow:scroll ;/* cuando se salga del flujo (inicio,menu,etc 
+                                scroll= es una barrra que se muestra */
+
         }
         header nav ul li{
             display: block;
+            border: 1px solid rgba(255,255,255,.5);/*  se da un borde para que aparesca la lineas  */
         }
         header nav ul li a{
+            padding: 12px;
             display: block;
-            color: rgb(222,1,8);/* letras del menu */
+            text-align: left;
+            color: rgb(64,64,64);/* letras del menu */
+        }
+       header nav ul li a:hover{/* cuando pase el mause por el imper enlace cambie de color*/
+         color: white;
+       }
+       header nav ul li .children_hijo{
+           width: 100%;
+            background: white;
+            color: white;
+            position: relative;
+        }
+        header nav ul li .children_hijo a{
+            margin-left:20px;/* corre  un poco a la izquierda  */
+        }
+        header nav ul li .icon-chevron-small-down{
+           float: right;
+           top: 3px;
+           margin-left: 10px;
+            margin-right: 0;
+            
         }
 
 }
