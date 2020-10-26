@@ -65,14 +65,16 @@ header nav ul  li a{
 
 header nav ul li:hover .children_hijo{/* posicionamiento  absolute es para lo hijo  */
     display: block;
-    width: 180%;
+    width: 129%;
     text-align: left;
     z-index: 20;
+   
 }
 header nav ul li .children_hijo{
     display:none ;/* para ocultar lo hijo y se oculta el subitem */
-    background: #011826;
+    background:red;
     position: absolute;
+    
 }
 
 .main-content{
