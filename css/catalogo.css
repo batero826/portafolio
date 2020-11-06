@@ -23,7 +23,7 @@ h2{
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    font: italic bold 50px Georgia, Serif;
+    font: italic bold 35px Georgia, Serif;
     /* text-shadow: -4px 3px 0 red, -14px 7px 0 #0a0e27; */
     
 }
@@ -34,7 +34,7 @@ p{
     text-align:center;
     font-weight: 700;
     font: italic bold 15px Georgia, Serif;
-    top: 2em;
+    top: 1em;
 }
 div.ancho-img{
     width: 100%;
@@ -43,7 +43,7 @@ div.ancho-img{
     left: 0;
   
 }
-img.catalogo{
+.img.catalogo{
     width: 100%;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;

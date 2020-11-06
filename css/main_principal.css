@@ -1,166 +1,151 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-
-h1{
+h1 {
     text-align: left;
     display: block;
     color: white;
 }
-.titulo{
-    position: absolute;/* darle un posicion  */
-    top:13px; /* para correr hacia abajo */
-    left: 20px;/* para correlo asia a un lado  derecho*/
+.titulo {
+    position: absolute;
+    top: 13px;
+    left: 20px;
 }
-.menu_bar{
-    display: none;/* no va amostra o ocultar  */
+.menu_bar {
+    display: none;
 }
-
-body{
-    background:#fefefe ;
+body {
+    background: #fefefe;
 }
-
-header{
+header {
     width: 100%;
 }
-
-header nav{
-    /* background: rgb(222,1,8); */
+header nav {
     background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);    
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
     width: 100%;
     margin: 0 auto;
     z-index: 10;
 }
-
 header nav ul {
     list-style: none;
     text-align: right;
 }
-
-header nav ul li{/* posicionamiento  este es el padre de los submenu */
- display:inline-block;/* para alinear el menu vertical o horizontal "un lado del otro" */
- position: relative;
+header nav ul li {
+    display: inline-block;
+    position: relative;
 }
-
-header nav ul  li a{
+header nav ul li a {
     color: white;
-    display: block;/* se comporta como un bloque para que escoja toda la palabra */
-    text-decoration: none;/*  */
-    padding: 20px;/* a= para separar entre ellos, los hijos   */
-
-}
-
-header nav ul li a span{
-    margin-right: 10px; /* para corres un margn espacio de la imagen al testo */
-}
-
-/* header nav ul li:hover{
-    background-color: #FEE140;
-    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%); */
-    
-   /*  background: rgb(191,0,6); *//* para que alumbre donde selecionamos */
-/* } */
-
-
-/* header nav ul li:hover .children_hijo{ *//* posicionamiento  absolute es para lo hijo  */
-/*     display: block;
-    width: 129%;
-    text-align: left;
-    z-index: 20;  
-} */
-
-header nav ul li .children_hijo{
-    display:none ;/* para ocultar lo hijo y se oculta el subitem */
-    width: 150%;
-    background:gainsboro;
-    position: absolute;
-    color: rgb(64,64,64);
-}
-header nav ul li .children_hijo li{
     display: block;
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    text-decoration: none;
+    padding: 20px;
 }
-.main-content{
-    margin: 2em;/* espacio */
-    text-align: justify;/* justificar el documento osea que se centra  */
+header nav ul li a span {
+    margin-right: 10px;
 }
-/* movil y table -menu */
-@media screen  and (max-width: 768px){/* meria cueri */
-        body{
-            padding-top: 69px;/* solamente parte de arriba se sube */
-        }
-        .titulo{
-            display: none;/* para desaperecer el titulo */
-        }
-        .menu_bar{
-            display:block;/*  para mostrar */
-            width: 100%;/* mostrar el ancho  */
-            position: fixed;/* parte superior  */
-            top: 0;
-            background-color: #FFE53B;
-            background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-            
-       }
-       .menu_bar .bt-menu{
+/* header nav ul li:hover {
+    background: rgb(191,0,6);
+} */
+/* header nav ul li:hover .children {
+    display: block;
+    width: 180%;
+    text-align: left;
+    z-index: 20;
+} */
+header nav ul li .children {
+    display: none;
+    width: 150%;
+    background: rgb(230,230,230);
+    position: absolute;
+    text-align: left;
+}
+header nav ul li .children li {
+    display: block;
+    border: 1px solid rgba(255,255,255,.5);
+}
+header nav ul li .children li a {
+    display: block;
+    background-color: #FFE53B;
+   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    
+};
+.main-content {
+    margin: 2em;
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 69px; 
+    }
+    .titulo {
+        display: none;
+    }
+    .menu_bar {
         display: block;
-        padding:20px ;/* espaciado o dar un espacio  portodo lo lado  o un  solo lado  */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #FFE53B;
+        background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
         color: #fff;
-     font-size: 25px;/* fuente */
-     font-weight: 900;/* fuente de negrilla */
-     text-decoration: none; /* quitar  testo descorecho*/
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
     }
-    .menu_bar span{
-        float: right;/* esto es para flotar */
-        font-size: 38px;/* aumentar el tamaño */
+    .menu_bar span {
+        float: right;
+        font-size: 38px;
     }
-        header nav{
-            width: 80%;
-            position: fixed;/* posicion fija -fixed se acomoda en cualquier partes  */
-            right:100% ;/* para poder  esconder */
-            height: calc(100% - 80px);/*propiedad donde ponemos  calcular="calc  */
-            background: rgb(230,230,230);
-            margin: 0;/* margenes */
-            overflow:scroll ;/* cuando se salga del flujo (inicio,menu,etc 
-                                scroll= es una barrra que se muestra */
-
-        }
-        header nav ul li{
-            display: block;
-            border: 1px solid rgba(255,255,255,.5);/*  se da un borde para que aparesca la lineas  */
-        }
-
-        header nav ul li:hover{
-            background:whitesmoke;
-        }
-
-        header nav ul li a{
-            padding: 12px;
-            display: block;  
-            text-align: left;
-            color: rgb(64,64,64);/* letras del menu */
-        }
-         header nav ul li a:hover{ /* cuando pase el mause por el imper enlace cambie de color */
-         padding: 12px;
-         background: white;
-         color:black;
-       } 
-       header nav ul li .children_hijo{
-           width: 100%;
-            background:gainsboro;
-            color: white;
-            position: relative;
-        }
-        header nav ul li .children_hijo a{
-            margin-left:20px;/* corre  un poco a la izquierda  */
-        }
-        header nav ul li .icon-chevron-small-down{
-           float: right;
-           top: 3px;
-           margin-left: 10px;
-            margin-right: 0;
-            
-        }
-
+    header nav {
+        width: 80%;
+        position: fixed;
+        right: 100%;
+        height: calc(100% - 80px);
+        background: rgb(230,230,230);
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul li {
+        display: block;
+        border: 1px solid rgba(255,255,255,.5);
+    }
+    header nav ul li:hover {
+        background: white;
+    }
+    header nav ul li a {
+        padding: 12px;
+        display: block;
+        text-align: left;
+        color: rgb(64,64,64);/* aqui es para cambiar  de color letras  */
+    }
+    header nav ul li a:hover {
+        padding: 12px;
+        background: white;/* aqui es para cambiar  de color cuando paso el mause  */
+        color: black;
+    }
+    header nav ul li .children {
+        width: 100%;
+        background: gainsboro;
+        color: white;
+        position: relative;
+    }
+    header nav ul li .children a {
+        margin-left: 20px;
+    }
+    header nav ul li .icon-chevron-small-down {
+        float: right;
+        top: 3px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .main-content {
+        margin: 2em;
+        text-align: justify;
+    }
 }

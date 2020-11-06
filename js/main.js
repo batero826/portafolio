@@ -1,24 +1,23 @@
 $(document).ready(main);
 
 var menuOculto = 1;
+
 function main() {
-    $('.menu_bar').click(function(){
-        if(menuOculto == 1) {     /* comparando  */
+    $('.menu_bar').click(function() {
+        if (menuOculto == 1) {
             $('nav').animate ({
-                left:'0'
+                left: '0'
             });
-            menuOculto = 0; /* asignacion */
-        }
-        else{
-            $('nav').animate({
-                left: '100%'
-            });
-            menuOculto = 1;
-        }
+            menuOculto = 0;
+         }
+         else {
+             $('nav').animate({
+                 left: '-100%'
+             });
+             menuOculto = 1;
+         }
     });
-    $('.subMenu').click(function(){
-        $(this).children_hijo('.children_hijo').slideToggle();
-    });
-    /* hacer una prueba:  */
-   /*  alert("Si esta accediendo"); */
+    $('.subMenu').click(function() {
+        $(this).children('.children').slideToggle();
+    }); 
 }
