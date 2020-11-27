@@ -10,6 +10,48 @@
 
 </head>
 <body>
+   <!-- carrusel de imagen -->
+   <div class="size-slide">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+            </ul>
+            <!-- slideshow -->
+          <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/BMW-450x300.jpg" alt="carro bwm">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-slide" src="img/bugatti-chiron.jpg" alt="carro" >
+                </div>
+                <div class="carousel-item">
+                  <img class="img-slide"  src="img/bugattichironrecor.jpg" alt="carrobugatti" >
+                </div>
+                <div class="carousel-item">
+                  <img class="img-slide" src="img/deportivos-VN.jpg" alt="carro" >
+                </div>
+                <div class="carousel-item">
+                  <img class="img-slide"  src="img/logotipos-marcas-coches.jpg" alt="logotipo-carro">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-slide"  src="img/maxresdefault.jpg" alt="carro">
+                </div>
+            </div>
+            <!-- controles(izquierdo y derecha ) -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+      </div>
+  </div>
     <h2>Toast</h2>
     <div class="toast" data-autohides="false">
         <div class="toast-header">
@@ -34,25 +76,36 @@
     <!-- para activarlos focus= aparece cuando se pasa el mause -->
       <!-- para activarlos hover= aparece cuando deja el mouse en el nombre y aparece  -->
       <br><br>
+
+    <h2>Alert Clásico!!!</h2>
+    <script> 
+      alert("Este es  un alert clasico!!!")
+    </script>
+      <br><br>
     <h2>Ventana Modal </h2>
-    <di class="modal-header">
-        <h5 id="tituloventana">Titulo de la ventana de modal</h5>
-        <button class="close" data-dismiss="modal" aria-label="cerrar">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    </di>
-    <div class="modal-body">
-        <div class="alert alert-success">
-            <h6><strong> Los datos han sigo guardados de forma exitosa!</strong></h6>
+     <button class="btn btn-success" data-toggle="modal" data-target="#ventanaModal">Abrir Ventana Modal</button>
+    <div class="modal" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+           <div class="modal-dialog" role="document"><!-- se centre el cuadro  -->
+            <div class="modal-content">
+                <div class="modal-header"><!-- mostrar un linea  -->
+                    <h5 id="tituloventana">Titulo de la ventana de modal</h5>
+                    <button class="close" data-dismiss="modal" aria-label="cerrar"><!-- cabesera o titulo -->
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success">
+                        <h6><strong> Los datos han sigo guardados de forma exitosa!</strong></h6><!-- cuerpo -->
+                        <img class="img2" src="img/alerta.png" alt="guardar" >
+                    </div>
+                </div> 
+                <div class="modal-footer">
+                    <button class="btn btn-warning" type="button" data-dismiss="modal">cerrar</button><!-- pies -->
+                    <button class="btn btn-success" type="button" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
         </div>
-      </div> 
-    <div class="modal-footer">
-        <button class="btn btn-warning" type="button" data-dismiss="modal ">cerrar</button>
-        <button class="btn btn-success" type="button">Aceptar</button>
-
-
     </div>
-
     <script>
         $(document).ready(function() {
             $('.toast').toast('show');
