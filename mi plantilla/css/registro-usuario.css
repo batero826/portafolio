@@ -1,0 +1,13 @@
+td{
+    padding:10px;
+    text-align: center;
+}
+
+.location-btn  {
+  margin-left: 10px;
+  float:right;
+}
+
+a,li{
+    cursor: pointer;
+}
